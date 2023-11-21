@@ -19,7 +19,7 @@ export function Header() {
         'bg-teal-500' :
         'bg-violet-600'}`}
       >
-          About us
+          About us!
       </Link>
       <Link href='/products'
         className={`px-4 py-2 ${pathName === '/products' ? 
