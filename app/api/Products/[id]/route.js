@@ -1,12 +1,13 @@
-import { headers } from "@/next.config";
-
-export async function GET(request, {params}) {
-
-  const res = await fetch(`https://fakestoreapi.com/products/${params.id}`, {
+export async function GET(request, { params }) {
+  const { id } = params;
+  console.log(params)
+  const res = await fetch(`https://fakestoreapi.com/products/${id}`, {
+    // next: {revalidate: 20},
     headers: {
-      'Content-Type': 'application/json'
-    }
-  });
-  const data = await res.json();
-  return Response.json({data})
+      'Content-Type': 'application/json',
+    },
+  })
+  const data = await res.json()
+ 
+  return Response.json({ data })
 }

@@ -1,7 +1,7 @@
-export function Footer() {
+export default function Footer() {
   return (
-    <footer className="bg-slate-800">
-      <h3>My website</h3>
+    <footer className="bg-slate-800 mt-auto">
+      My store footer
     </footer>
   )
 }

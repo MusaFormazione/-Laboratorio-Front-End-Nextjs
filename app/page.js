@@ -1,9 +1,13 @@
-import Image from 'next/image'
+export const metadata = {
+  title: 'homepage',
+  description: 'my test app'
+}
 
 export default function Home() {
+
   return (
     <main className="">
-      <h1>Welcome!</h1>
+      <h3>Welcome!</h3>
     </main>
   )
 }

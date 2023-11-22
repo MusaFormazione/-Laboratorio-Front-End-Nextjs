@@ -1,3 +1,4 @@
 export default function Loading() {
-  return (<h2>Loading product....</h2>)
+  // You can add any UI inside Loading, including a Skeleton.
+  return (<div>product is loading...</div>)
 }
